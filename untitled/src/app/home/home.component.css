@@ -1,0 +1,14 @@
+#header {
+  display: flex;
+  flex-direction: row;
+}
+
+#header_list {
+  display: flex;
+  flex-direction: row;
+  background-color: dodgerblue;
+}
+
+#ul-header li{
+  display: inline;
+}

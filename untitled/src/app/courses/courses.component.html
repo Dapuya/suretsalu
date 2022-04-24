@@ -1,0 +1,36 @@
+<div id="header">
+  <h1>Suret Salu</h1>
+  <ul id="header_list">
+    <li>
+      Main
+    </li>
+    <li>
+      Courses
+    </li>
+    <li>
+      About us
+    </li>
+  </ul>
+
+  <img class="SocialNetworks" src="" alt="Instagram">
+  <img class="SocialNetworks" src="" alt="WhatsApp">
+  <button class="button">Login</button>
+</div>
+
+<h2>Courses</h2>
+
+<div *ngFor="let item of course">
+
+  <h3>
+    <a
+      [title]="item.name + ' details'">
+      {{ item.name }}
+    </a>
+  </h3>
+
+  <img src="{{ item.image }}" width="200px">
+  <p *ngIf="item.description">
+    Description: {{ item.description }}
+  </p>
+
+</div>
